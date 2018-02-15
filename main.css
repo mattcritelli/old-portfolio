@@ -1,17 +1,74 @@
-#about-me {
-  padding-top: 4%;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+#jumbo {
+  padding-top: 6%;
   padding-bottom: 2%;
+  margin-bottom: 0;
+  background-color: #202020;
+  color: #fff;
+}
+
+h1 {
+  padding-top: 5%;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+
+@keyframes slider {
+  0% { left: 0%; }
+  15% { left: 0%; }
+  20% { left: -100%; }
+  35% { left: -100%; }
+  40% { left: -200%; }
+  55% { left: -200%; }
+  60% { left: -300%; }
+  75% { left: -300%; }
+  80% { left: -400%; }
+  100% { left: -400%; }
+}
+
+#slider {
+  overflow: hidden;
+}
+
+#slider figure img {
+  width: 20%;
+  margin: 0;
+  padding: 0;
+}
+
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 20s slider infinite;
+}
+
+
+#about-me h2 {
+  padding-bottom: 2%;
+}
+
+#about-me {
+  font-weight: 300;
+  padding-top: 4%;
+  padding-bottom: 4%;
   background-color: #2c3e50;
   color: white;
 }
 
-h2 {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-}
-
-#about-me h2 {
-  padding-bottom: 2%;
+.highlight {
+  font-weight: 600;
 }
 
 #main-button {
@@ -21,21 +78,13 @@ h2 {
 
 #portfolio {
   padding-top: 4%;
-  padding-bottom: 2%;
+  padding-bottom: 4%;
   background-color: white;
-}
-
-#jumbo {
-  padding-top: 5%;
-  padding-bottom: 2%;
-  margin-bottom: 0;
-  background-color: #202020;
-  color: #fff;
 }
 
 #contact {
   background-color: #bdc3c7;
-  padding-top: 5%;
+  padding-top: 4%;
   padding-bottom: 2%;
 }
 
